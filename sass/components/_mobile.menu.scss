@@ -1,0 +1,125 @@
+.mobile-menu-open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+.mobile-menu-open-btn__icon {
+  fill: #000000;
+  transition: fill 250ms var(--transition);
+  &:hover,
+  &focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms var(--transition), visibility 250ms var(--transition);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu__container {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 28px;
+}
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+.mobile-menu__close-icon {
+  fill: #000000;
+  transition: fill 250ms var(--transition);
+  &:hover,
+  &focus {
+    fill: var(--accent-color);
+  }
+}
+.mobile-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+  text-decoration: none;
+
+  &:hover,
+  &focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu__nav-current {
+  color: var(--accent-color);
+}
+
+.mobile-menu__contacts {
+  margin-top: 302px;
+  margin-bottom: 64px;
+}
+
+.mobile-menu__contacts-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.mobile-menu__contacts-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color2);
+}
+
+.mobile-menu__socials {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu__socials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.mobile-menu__socials-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+.logo {
+  margin-right: 93px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-forepart {
+  color: var(--accent-color);
+}
+
+.top-header .logo {
+  color: #000000;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 10px;
+  color: var(--accent-color3);
+}

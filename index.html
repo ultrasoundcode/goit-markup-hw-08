@@ -229,13 +229,28 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team-1.jpg"
-                alt="Ігор Дем'яненко"
-                max-width="450"
-                max-height="460"
-              />
+              <picture class="team-pic">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/desktop-team.jpg 1x, ./images/team/desktop-team@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/tablet-team.jpg 1x, ./images/team/tablet-team@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/team/mobile-team.jpg 1x, ./images/team/mobile-team@2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-1.jpg"
+                  alt="Ігор Дем'яненко"
+                  max-width="450"
+                  max-height="460"
+                />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__title">Ігор Дем'яненко</h3>
                 <p class="team-card__desc">Product Designer</p>
@@ -272,13 +287,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team-2.jpg"
-                alt="Ольга Рєпіна"
-                max-width="450"
-                max-height="460"
-              />
+              <picture class="team-pic">
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/desktop-team-1.jpg    1x,
+                    ./images/team/desktop-team@2x-1.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="./images/team/tablet-team-1.jpg 1x, ./images/team/tablet-team@2x-1.jpg 2x"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/team/mobile-team-1.jpg 1x, ./images/team/mobile-team@2x-1.jpg 2x"
+                  2x
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-2.jpg"
+                  alt="Ольга Рєпіна"
+                  max-width="450"
+                  max-height="460"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p class="team-card__desc">Frontend Developer</p>
@@ -315,13 +348,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team-3.jpg"
-                alt="Микола Тарасов"
-                max-width="450"
-                max-height="460"
-              />
+              <picture class="team-pic">
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/desktop-team-2.jpg    1x,
+                    ./images/team/desktop-team@2x-2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="./images/team/tablet-team-2.jpg 1x, ./images/team/tablet-team@2x-2.jpg 2x"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/team/mobile-team-2.jpg 1x, ./images/team/mobile-team@2x-2.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-3.jpg"
+                  alt="Микола Тарасов"
+                  max-width="450"
+                  max-height="460"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p class="team-card__desc">Marketing</p>
@@ -358,13 +408,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team-4.jpg"
-                alt="Михайло Єрмаков"
-                max-width="450"
-                max-height="460"
-              />
+              <picture class="team-pic">
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/desktop-team-3.jpg    1x,
+                    ./images/team/desktop-team@2x-3.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="./images/team/tablet-team-3.jpg 1x, ./images/team/tablet-team@2x-3.jpg 2x"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/team/mobile-team-3.jpg 1x, ./images/team/mobile-team@2x-3.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-4.jpg"
+                  alt="Михайло Єрмаков"
+                  max-width="450"
+                  max-height="460"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p class="team-card__desc">UI Designer</p>
@@ -405,7 +472,7 @@
       </section>
 
       <!-- clients -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -453,7 +520,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- footer -->

@@ -3,20 +3,22 @@
   padding-bottom: 60px;
   background-color: var(--accent-bg-color);
 }
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
+
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+.footer-contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
-
 .studio-address {
   font-style: inherit;
 }
+
 .footer-contacts__address {
   font-style: inherit;
   font-size: 14px;
@@ -61,7 +63,14 @@
   }
 }
 
-/* footer social */
+// /* footer social */
+.footer-social {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
 .footer-social__title {
   font-weight: 700;
   font-size: 14px;
@@ -74,6 +83,7 @@
 .footer-social__list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer-social__link {
   display: flex;
@@ -100,12 +110,16 @@
   fill: var(--accent-color3);
 }
 
-/* footer-subscribes */
+// /* footer-subscribes */
 .footer-subscribes {
-  margin-left: 93px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 .footer-subscribes__title {
-  display: inline-block;
+  display: block;
+  // display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -114,12 +128,9 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.footer-subscribes__form {
-  display: flex;
-}
 
 .footer-subscribes__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -131,6 +142,7 @@
   margin-right: 12px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 20px;
 
   transition: box-shadow 250ms var(--transition);
 
@@ -139,7 +151,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
-
+.footer-subscribes__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer-subscribes__form input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -174,4 +190,36 @@
 .footer-subscribes__icon {
   fill: #ffffff;
   margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .footer-contacts {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-subscribes__form {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+  }
+  .footer-subscribes {
+    margin-left: 93px;
+  }
+  .footer-subscribes__input {
+    width: 358px;
+  }
 }

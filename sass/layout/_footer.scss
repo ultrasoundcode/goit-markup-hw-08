@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .footer-social__title {
@@ -208,6 +208,12 @@
     display: flex;
     flex-wrap: nowrap;
   }
+  .footer-social__title {
+    text-align: left;
+  }
+  .footer-subscribes__title {
+    text-align: left;
+  }
   .footer-contacts__item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -216,10 +222,14 @@
     flex-direction: row;
     align-items: normal;
   }
+  .footer-contacts__list {
+    display: block;
+  }
   .footer-subscribes {
     margin-left: 93px;
   }
   .footer-subscribes__input {
+    margin-bottom: 0px;
     width: 358px;
   }
 }

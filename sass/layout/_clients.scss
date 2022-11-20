@@ -3,10 +3,6 @@
   padding-bottom: 60px;
   // background-color: #f5f5f5;
 }
-.clients .section-title {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
 .clients__item {
   width: 210px;
   height: 92px;
@@ -52,17 +48,15 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .clients .section-title {
-    margin-bottom: 50px;
-  }
+
   .clients__list {
     flex-wrap: nowrap;
   }
   .clients__item {
     width: 170px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
 }
 // .clients {

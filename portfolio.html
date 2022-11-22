@@ -75,12 +75,12 @@
           </button>
           <ul class="mobile-menu__nav">
             <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link mobile-menu__nav-current" href="./index.html"
-                >Студія</a
-              >
+              <a class="mobile-menu__nav-link" href="./index.html">Студія</a>
             </li>
             <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link" href="./portfolio.html">Портфоліо</a>
+              <a class="mobile-menu__nav-link mobile-menu__nav-current" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-menu__nav-item">
               <a class="mobile-menu__nav-link" href="#footerContacts">Контакти</a>
@@ -147,13 +147,36 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-1.jpg"
-                    alt="Страница веб-сайта Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-1.jpg"
+                      alt="Страница веб-сайта Технокряк"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
                     <p class="portfolio-prj__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -172,19 +195,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-1.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-1.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-1.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-1.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-1.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-1.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама😆</p>
                   </div>
                 </div>
 
@@ -197,19 +239,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-3.jpg"
-                    alt="Логотип приложения ресторана Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-2.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-2.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-2.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-2.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-2.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-2.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-3.jpg"
+                      alt="Логотип приложения ресторана Seafood"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама😆</p>
                   </div>
                 </div>
 
@@ -222,19 +283,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-3.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-3.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-3.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-3.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-3.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-3.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-4.jpg"
+                      alt="Наушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама😆</p>
                   </div>
                 </div>
 
@@ -247,19 +327,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-5.jpg"
-                    alt="Приложение для проекта Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-4.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-4.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-4.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-4.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-4.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-4.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-5.jpg"
+                      alt="Приложение для проекта Boxes"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама😆</p>
                   </div>
                 </div>
 
@@ -272,19 +371,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-6.jpg"
-                    alt="Веб-сайт Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-5.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-5.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-5.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-5.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-5.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-5.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-6.jpg"
+                      alt="Веб-сайт Inspiration has no Borders"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама😆</p>
                   </div>
                 </div>
 
@@ -297,19 +415,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-7.jpg"
-                    alt="Дизайн страницы журнала"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-6.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-6.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-6.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-6.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-6.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-6.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-7.jpg"
+                      alt="Дизайн страницы журнала"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама</p>
                   </div>
                 </div>
 
@@ -322,19 +459,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-7.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-7.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-7.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-7.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-8.jpg"
+                      alt="Проект LAB"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама😆</p>
                   </div>
                 </div>
 
@@ -347,19 +503,38 @@
             <li class="portfolio-prj__item">
               <a href="" class="portfolio-prj__link">
                 <div class="portfolio-prj__img">
-                  <img
-                    class="portfolio-prj__img-div"
-                    src="./images/portfolio/portf-img-9.jpg"
-                    alt="Приложение Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="port-pic">
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/desktop-portfolio-8.jpg    1x,
+                        ./images/portfolio/desktop-portfolio@2x-8.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/portfolio/tablet-portfolio-8.jpg    1x,
+                        ./images/portfolio/tablet-portfolio@2x-8.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/portfolio/mobile-portfolio-8.jpg    1x,
+                        ./images/portfolio/mobile-portfolio@2x-8.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio-prj__img-div"
+                      src="./images/portfolio/portf-img-9.jpg"
+                      alt="Приложение Growing Business"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-prj__overlay">
-                    <p class="portfolio-prj__overlay-desc">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                      приватну особу.
-                    </p>
+                    <p class="portfolio-prj__overlay-desc">Здесь может быть ваша реклама😆</p>
                   </div>
                 </div>
 

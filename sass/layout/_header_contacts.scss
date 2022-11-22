@@ -15,7 +15,6 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--accent-color2);
-    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -51,11 +50,15 @@
 @media screen and (min-width: 1200px) {
   .header-contacts {
     display: flex;
-    // align-items: center;
     margin-left: auto;
   }
+
   .header-contacts__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .header-contacts__link {
+    display: flex;
   }
   .header-contacts__icon {
     margin-right: 10px;

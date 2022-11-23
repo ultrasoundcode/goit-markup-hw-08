@@ -111,6 +111,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms var(--transition), visibility 250ms var(--transition);
+  z-index: 2;
 }
 
 .mobile-menu.is-open {
@@ -124,6 +125,14 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .mobile-menu__close-btn {
@@ -162,10 +171,6 @@ body {
 
 .mobile-menu__nav-current {
   color: var(--accent-color);
-}
-
-.mobile-menu__nav {
-  margin-bottom: 300px;
 }
 
 .mobile-menu__contacts {
